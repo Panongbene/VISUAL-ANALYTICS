@@ -1,2 +1,3 @@
 # some file that we dont put in github
 *.
+.ipynb_checkpoints 
