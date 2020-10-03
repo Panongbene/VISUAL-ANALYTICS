@@ -1,0 +1,909 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Population(habitants (2020))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " habitants ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Population(habitants (2020)) by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Population(habitants (2020)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Population(habitants (2020)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Population(habitants (2020)) 2",
+    "newColumnName": "Date du recensement de la population",
+    "description": "Rename column Population(habitants (2020)) 2 to Date du recensement de la population"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Croissance démographique(% / an)",
+    "expression": "grel:value.replace(\" % / an\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Croissance démographique(% / an) using expression grel:value.replace(\" % / an\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Superficie(km²)",
+    "expression": "grel:value.replace(\" km²\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Superficie(km²) using expression grel:value.replace(\" km²\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Densité(habitants / km²)",
+    "expression": "grel:value.replace(\" habitants / km²\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Densité(habitants / km²) using expression grel:value.replace(\" habitants / km²\",\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PIB(milliards $USD (2017))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " milliards $USD ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column PIB(milliards $USD (2017)) by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PIB(milliards $USD (2017)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PIB(milliards $USD (2017)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PIB/habitant",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " $USD ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column PIB/habitant by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PIB/habitant 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PIB/habitant 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Croissance du PIB(% / an (2018))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " % / an ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Croissance du PIB(% / an (2018)) by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Croissance du PIB(% / an (2018)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Croissance du PIB(% / an (2018)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Espérance de vie(ans (2019))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ans ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Espérance de vie(ans (2019)) by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Espérance de vie(ans (2019)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Espérance de vie(ans (2019)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Taux de natalité(‰ (2019))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ‰ ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Taux de natalité(‰ (2019)) by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Taux de natalité(‰ (2019)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Taux de natalité(‰ (2019)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Indice de fécondité(enfants / femme (2019))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " enfants / femme ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Indice de fécondité(enfants / femme (2019)) by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Indice de fécondité(enfants / femme (2019)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Indice de fécondité(enfants / femme (2019)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "PIB(milliards $USD (2017)) 2",
+    "newColumnName": "date recensement PIB",
+    "description": "Rename column PIB(milliards $USD (2017)) 2 to date recensement PIB"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "PIB(milliards $USD (2017)) 1",
+    "newColumnName": "PIB(milliards $USD)",
+    "description": "Rename column PIB(milliards $USD (2017)) 1 to PIB(milliards $USD)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Population(habitants (2020)) 1",
+    "newColumnName": "Population(habitants)",
+    "description": "Rename column Population(habitants (2020)) 1 to Population(habitants)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "PIB/habitant 1",
+    "newColumnName": "PIB/habitant",
+    "description": "Rename column PIB/habitant 1 to PIB/habitant"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "PIB/habitant 2",
+    "newColumnName": "date recensement PIB/habitant",
+    "description": "Rename column PIB/habitant 2 to date recensement PIB/habitant"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Croissance du PIB(% / an (2018)) 1",
+    "newColumnName": "Croissance du PIB(% / an)",
+    "description": "Rename column Croissance du PIB(% / an (2018)) 1 to Croissance du PIB(% / an)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Croissance du PIB(% / an (2018)) 2",
+    "newColumnName": "date recensement Croissance du PIB(% / an)",
+    "description": "Rename column Croissance du PIB(% / an (2018)) 2 to date recensement Croissance du PIB(% / an)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Espérance de vie(ans (2019)) 1",
+    "newColumnName": "Espérance de vie(ans)",
+    "description": "Rename column Espérance de vie(ans (2019)) 1 to Espérance de vie(ans)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Espérance de vie(ans (2019)) 2",
+    "newColumnName": "date recensement Espérance de vie(ans)",
+    "description": "Rename column Espérance de vie(ans (2019)) 2 to date recensement Espérance de vie(ans)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Taux de natalité(‰ (2019)) 1",
+    "newColumnName": "Taux de natalité(‰)",
+    "description": "Rename column Taux de natalité(‰ (2019)) 1 to Taux de natalité(‰)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Taux de natalité(‰ (2019)) 2",
+    "newColumnName": "date recensement Taux de natalité(‰)",
+    "description": "Rename column Taux de natalité(‰ (2019)) 2 to date recensement Taux de natalité(‰)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Indice de fécondité(enfants / femme (2019)) 1",
+    "newColumnName": "Indice de fécondité(enfants / femme)",
+    "description": "Rename column Indice de fécondité(enfants / femme (2019)) 1 to Indice de fécondité(enfants / femme)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Indice de fécondité(enfants / femme (2019)) 2",
+    "newColumnName": "date recensement Indice de fécondité(enfants / femme)",
+    "description": "Rename column Indice de fécondité(enfants / femme (2019)) 2 to date recensement Indice de fécondité(enfants / femme)"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Taux de mortalité(‰ (2019))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ‰ ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Taux de mortalité(‰ (2019)) by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Taux de mortalité(‰ (2019)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Taux de mortalité(‰ (2019)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Taux de mortalité(‰ (2019)) 1",
+    "newColumnName": "Taux de mortalité(‰)",
+    "description": "Rename column Taux de mortalité(‰ (2019)) 1 to Taux de mortalité(‰)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Taux de mortalité(‰ (2019)) 2",
+    "newColumnName": "date recensement Taux de mortalité(‰)",
+    "description": "Rename column Taux de mortalité(‰ (2019)) 2 to date recensement Taux de mortalité(‰)"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Taux de mortalité infantile(‰ (2019))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ‰ ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Taux de mortalité infantile(‰ (2019)) by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Taux de mortalité infantile(‰ (2019)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Taux de mortalité infantile(‰ (2019)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Taux de mortalité infantile(‰ (2019)) 1",
+    "newColumnName": "Taux de mortalité infantile(‰)",
+    "description": "Rename column Taux de mortalité infantile(‰ (2019)) 1 to Taux de mortalité infantile(‰)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Taux de mortalité infantile(‰ (2019)) 2",
+    "newColumnName": "date recensement Taux de mortalité infantile(‰)",
+    "description": "Rename column Taux de mortalité infantile(‰ (2019)) 2 to date recensement Taux de mortalité infantile(‰)"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Taux d\"alphabétisation(% (2020))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " % ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Taux d\"alphabétisation(% (2020)) by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Taux d\"alphabétisation(% (2020)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Taux d\"alphabétisation(% (2020)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Taux d\"alphabétisation(% (2020)) 1",
+    "newColumnName": "Taux d\"alphabétisation(%)",
+    "description": "Rename column Taux d\"alphabétisation(% (2020)) 1 to Taux d\"alphabétisation(%)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Taux d\"alphabétisation(% (2020)) 2",
+    "newColumnName": "date recensement Taux d\"alphabétisation(%)",
+    "description": "Rename column Taux d\"alphabétisation(% (2020)) 2 to date recensement Taux d\"alphabétisation(%)"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IPE",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " (",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column IPE by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "IPE 2",
+    "newColumnName": "date recensement IPE",
+    "description": "Rename column IPE 2 to date recensement IPE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "IPE 1",
+    "newColumnName": "IPE",
+    "description": "Rename column IPE 1 to IPE"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Touristes",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "personnes",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Touristes by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Touristes 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Touristes 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Touristes 1",
+    "newColumnName": "Touristes",
+    "description": "Rename column Touristes 1 to Touristes"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Touristes 2",
+    "newColumnName": "date recensement Touristes",
+    "description": "Rename column Touristes 2 to date recensement Touristes"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement Taux de natalité(‰)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement Taux de natalité(‰)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement Indice de fécondité(enfants / femme)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement Indice de fécondité(enfants / femme)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement IPE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement IPE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement Taux d\"alphabétisation(%)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement Taux d\"alphabétisation(%)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement Taux de mortalité(‰)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement Taux de mortalité(‰)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement Taux de mortalité infantile(‰)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement Taux de mortalité infantile(‰)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PIB(milliards $USD)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0,000 milliards $USD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0,000"
+      }
+    ],
+    "description": "Mass edit cells in column PIB(milliards $USD)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement PIB",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement PIB"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PIB/habitant",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11 400 $USD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "11 400"
+      }
+    ],
+    "description": "Mass edit cells in column PIB/habitant"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement PIB/habitant",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement PIB/habitant"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement IPE",
+    "expression": "grel:value.replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column date recensement IPE using expression grel:value.replace(\")\",\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IDH(/ 1 (2018))",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "/ 1",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column IDH(/ 1 (2018)) by separator"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IDH(/ 1 (2018)) 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column IDH(/ 1 (2018)) 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IDH(/ 1 (2018)) 2",
+    "expression": "grel:value.replace(\"(\",\"\").replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column IDH(/ 1 (2018)) 2 using expression grel:value.replace(\"(\",\"\").replace(\")\",\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Croissance du PIB(% / an)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "-3,90 % / an"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "-3,90"
+      }
+    ],
+    "description": "Mass edit cells in column Croissance du PIB(% / an)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement Croissance du PIB(% / an)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement Croissance du PIB(% / an)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement Touristes",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement Touristes"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PIB/habitant",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0 $USD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column PIB/habitant"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Croissance du PIB(% / an)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0,00 % / an"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0,00"
+      }
+    ],
+    "description": "Mass edit cells in column Croissance du PIB(% / an)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Espérance de vie(ans)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0,00 ans"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0,00"
+      }
+    ],
+    "description": "Mass edit cells in column Espérance de vie(ans)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date recensement Espérance de vie(ans)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column date recensement Espérance de vie(ans)"
+  }
+]
