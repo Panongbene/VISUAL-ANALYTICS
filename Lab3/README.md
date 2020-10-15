@@ -24,9 +24,9 @@ The end of your report should include a brief summary of main lessons learned.
 ## Visualization Tools
 You are free to use one or more visualization tools in this assignment. However, in the interest of time and for a friendlier learning curve, we strongly encourage you to use Tableau. Tableau provides a graphical interface focused on the task of visual data exploration. You will (with rare exceptions) be able to complete an initial data exploration more quickly and comprehensively than with a programming-based tool.
 
-# * Tableau - Desktop visual analysis software. Available for both Windows and MacOS; register for a free student license.
-# * Data Transforms in Vega-Lite. A tutorial on the various built-in data transformation operators available in Vega-Lite.
-# * Data Voyager, a research prototype from the UW Interactive Data Lab, combines a Tableau-style interface with visualization recommendations. Use at your own  risk!
-# * R, using the ggplot2 library or with R's built-in plotting functions.
-# * http://jupyter.org/Jupyter Notebooks (Python), using libraries such as Altair or Matplotlib.
-# * Streamlit + Alair as begun to teach in class
+* Tableau - Desktop visual analysis software. Available for both Windows and MacOS; register for a free student license.
+* Data Transforms in Vega-Lite. A tutorial on the various built-in data transformation operators available in Vega-Lite.
+* Data Voyager, a research prototype from the UW Interactive Data Lab, combines a Tableau-style interface with visualization recommendations. Use at your own  risk!
+* R, using the ggplot2 library or with R's built-in plotting functions.
+* http://jupyter.org/Jupyter Notebooks (Python), using libraries such as Altair or Matplotlib.
+* Streamlit + Alair as begun to teach in class
