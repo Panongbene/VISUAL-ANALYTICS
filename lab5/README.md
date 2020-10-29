@@ -39,15 +39,24 @@ You should carefully consider not only visual encoding decisions but also how yo
 ## Grading Criteria
 This part of the assignment will be scored using the following rubric. Note, rubric cells may not map exactly to specific point scores.
 
-Component	Perspective	Excellent	Satisfactory	Poor
-Marks & Encodings	P1	All design choices are effective. The visualization can be read and understood effortlessly.	Design choices are largely effective, but minor errors hinder comprehension.	Ineffective mark or encoding choices are distracting or potentially misleading.
-Marks & Encodings	P2	Subtle ineffective choices for marks or encodings require close and careful reading to identify.	Ineffective mark or encoding choices are not immediately obvious but...	Ineffective marks or encodings were chosen but could be immediately identified.
+Component	      Perspective	                         Excellent	                              Satisfactory                                      Poor
+
+Marks & Encodings	  P1	All design choices are effective. The visualization can be read and understood effortlessly.	Design choices are largely effective, but minor errors hinder comprehension.	Ineffective mark or encoding choices are distracting or potentially misleading.
+
+Marks & Encodings	  P2	Subtle ineffective choices for marks or encodings require close and careful reading to identify.	Ineffective mark or encoding choices are not immediately obvious but...	Ineffective marks or encodings were chosen but could be immediately identified.
+
 Data Transformation	P1	More advanced transformation were used to extend the dataset in interesting or useful ways.	Simple transforms (e.g., sorting, filtering) were primarily used.	The raw dataset was used directly, with little to no additional transformation.
+
 Data Transformation	P2	More advanced transformation were used inappropriately or to intentionally mislead.	Simple transforms (e.g., sorting, filtering) were primarily used.	The raw dataset was used directly, with little to no additional transformation.
+
 Titles & Labels	P1	Titles and labels helpfully describe and contextualize the visualization.	Most necessary titles and labels are present, but they could provide more context.	Many titles or labels are missing, or do not provide human-understandable information.
+
 Titles & Labels	P2	Titles and labels subtly skew reading the visualization.	Titles and labels leave out important information, but an astute reader	Titles and labels are largely present, visible, and facilitate reading the visualization.
+
 Write-up	Both	Your write ups are well-crafted and provides reasoned justification for all design choices.	Most design decisions are described, but rationale could be explained at a greater level of detail.	Missing or incomplete. Several design choices are left unexplained.
+
 Critical Reading	 	You correctly identified more than 3/4 of the visualizations you evaluated. Your write-ups thoroughly described how you did so by connecting to lecture concepts.	You correctly identified more than half of the visualizations you evaluated. Your write-ups do a good job of describing why, but could explain your rationale to a greater level of detail.	You correctly identified only half of the visualizations you evaluated. Your write-ups were missing or incomplete.
+
 Creativity & Originality	 	You exceeded the parameters of the assignment, with original insights or particularly creative visualizations or transformations.	You met all the parameters of the assignment.	You met most of the parameters of the assignment.
 
 ## Part 2
